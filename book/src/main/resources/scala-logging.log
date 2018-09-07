@@ -1,0 +1,132 @@
+13:28:54 INFO  Slf4jLogger {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 applyOrElse} - Slf4jLogger started
+13:28:54 INFO  Remoting {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Starting remoting
+13:28:54 INFO  Remoting {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Remoting started; listening on addresses :[akka.tcp://book-impl-application@127.0.0.1:41217]
+13:28:54 INFO  Remoting {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Remoting now listens on addresses: [akka.tcp://book-impl-application@127.0.0.1:41217]
+13:28:54 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:41217] - Starting up, Akka version [2.5.16] ...
+13:28:55 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:41217] - Registered cluster JMX MBean [akka:type=Cluster,port=41217]
+13:28:55 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:41217] - Started up successfully
+13:28:55 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:41217] - No seed-nodes configured, manual cluster join required
+13:28:55 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:41217] - Node [akka.tcp://book-impl-application@127.0.0.1:41217] is JOINING itself (with roles [dc-default]) and forming new cluster
+13:28:55 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:41217] - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:41217] dc [default] is the new leader
+13:28:55 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:41217] - Leader is moving node [akka.tcp://book-impl-application@127.0.0.1:41217] to [Up]
+13:28:55 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Singleton manager starting singleton actor [akka://book-impl-application/system/sharding/BookEntityCoordinator/singleton]
+13:28:55 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - ClusterSingletonManager state change [Start -> Oldest]
+13:28:55 INFO  GuavaCompatibility {com.datastax.driver.core.GuavaCompatibility selectImplementation} - Detected Guava >= 19 in the classpath, using modern compatibility layer
+13:28:55 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Singleton manager starting singleton actor [akka://book-impl-application/user/cassandraOffsetStorePrepare-singleton/singleton]
+13:28:55 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - ClusterSingletonManager state change [Start -> Oldest]
+13:28:55 INFO  ClusterStartupTaskActor {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Executing cluster start task cassandraOffsetStorePrepare.
+13:28:55 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Singleton manager starting singleton actor [akka://book-impl-application/user/readSideGlobalPrepare-BookProcessor-singleton/singleton]
+13:28:55 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - ClusterSingletonManager state change [Start -> Oldest]
+13:28:55 INFO  ClusterStartupTaskActor {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Executing cluster start task readSideGlobalPrepare-BookProcessor.
+13:28:55 INFO  ClusterSingletonProxy {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Singleton identified at [akka://book-impl-application/user/cassandraOffsetStorePrepare-singleton/singleton]
+13:28:55 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Singleton manager starting singleton actor [akka://book-impl-application/system/sharding/BookProcessorCoordinator/singleton]
+13:28:55 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - ClusterSingletonManager state change [Start -> Oldest]
+13:28:56 INFO  ClusterSingletonProxy {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Singleton identified at [akka://book-impl-application/user/readSideGlobalPrepare-BookProcessor-singleton/singleton]
+13:28:56 INFO  Play {play.api.Play$ start} - Application started (Dev)
+13:28:57 INFO  ClockFactory {com.datastax.driver.core.ClockFactory newInstance} - Using native clock to generate timestamps.
+13:28:57 INFO  ClockFactory {com.datastax.driver.core.ClockFactory newInstance} - Using native clock to generate timestamps.
+13:28:57 INFO  ClockFactory {com.datastax.driver.core.ClockFactory newInstance} - Using native clock to generate timestamps.
+13:28:57 INFO  NettyUtil {com.datastax.driver.core.NettyUtil <clinit>} - Did not find Netty's native epoll transport in the classpath, defaulting to NIO.
+13:28:58 INFO  DCAwareRoundRobinPolicy {com.datastax.driver.core.policies.DCAwareRoundRobinPolicy init} - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+13:28:58 INFO  DCAwareRoundRobinPolicy {com.datastax.driver.core.policies.DCAwareRoundRobinPolicy init} - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+13:28:58 INFO  Cluster {com.datastax.driver.core.Cluster$Manager init} - New Cassandra host localhost/127.0.0.1:9042 added
+13:28:58 INFO  Cluster {com.datastax.driver.core.Cluster$Manager init} - New Cassandra host localhost/127.0.0.1:9042 added
+13:28:58 INFO  DCAwareRoundRobinPolicy {com.datastax.driver.core.policies.DCAwareRoundRobinPolicy init} - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+13:28:58 INFO  Cluster {com.datastax.driver.core.Cluster$Manager init} - New Cassandra host localhost/127.0.0.1:9042 added
+13:28:58 INFO  ClusterStartupTaskActor {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster start task readSideGlobalPrepare-BookProcessor done.
+13:28:58 INFO  ClusterStartupTaskActor {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster start task cassandraOffsetStorePrepare done.
+13:28:59 INFO  UUIDs {com.datastax.driver.core.utils.UUIDs getProcessPiece} - PID obtained through native call to getpid(): 21711
+13:28:59 INFO  ClockFactory {com.datastax.driver.core.ClockFactory newInstance} - Using native clock to generate timestamps.
+13:28:59 INFO  ClockFactory {com.datastax.driver.core.ClockFactory newInstance} - Using native clock to generate timestamps.
+13:28:59 INFO  DCAwareRoundRobinPolicy {com.datastax.driver.core.policies.DCAwareRoundRobinPolicy init} - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+13:28:59 INFO  DCAwareRoundRobinPolicy {com.datastax.driver.core.policies.DCAwareRoundRobinPolicy init} - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+13:28:59 INFO  Cluster {com.datastax.driver.core.Cluster$Manager init} - New Cassandra host localhost/127.0.0.1:9042 added
+13:28:59 INFO  Cluster {com.datastax.driver.core.Cluster$Manager init} - New Cassandra host localhost/127.0.0.1:9042 added
+13:37:33 ERROR book {com.lightbend.lagom.internal.scaladsl.server.ScaladslServiceRouter maybeLogException} - Exception in RestCallIdImpl(GET,/book/details/author/:author)
+java.util.concurrent.ExecutionException: com.datastax.driver.core.exceptions.InvalidQueryException: Cannot execute this query as it might involve data filtering and thus may have unpredictable performance. If you want to execute this query despite the performance unpredictability, use ALLOW FILTERING
+	at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:503)
+	at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:462)
+	at com.google.common.util.concurrent.AbstractFuture$TrustedFuture.get(AbstractFuture.java:79)
+	at akka.persistence.cassandra.package$ListenableFutureConverter$$anon$2.$anonfun$run$2(package.scala:25)
+	at scala.util.Try$.apply(Try.scala:209)
+	at akka.persistence.cassandra.package$ListenableFutureConverter$$anon$2.run(package.scala:25)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.datastax.driver.core.exceptions.InvalidQueryException: Cannot execute this query as it might involve data filtering and thus may have unpredictable performance. If you want to execute this query despite the performance unpredictability, use ALLOW FILTERING
+	at com.datastax.driver.core.Responses$Error.asException(Responses.java:148)
+	at com.datastax.driver.core.SessionManager$4.apply(SessionManager.java:220)
+	at com.datastax.driver.core.SessionManager$4.apply(SessionManager.java:196)
+	at com.google.common.util.concurrent.AbstractTransformFuture$AsyncTransformFuture.doTransform(AbstractTransformFuture.java:211)
+	at com.google.common.util.concurrent.AbstractTransformFuture$AsyncTransformFuture.doTransform(AbstractTransformFuture.java:200)
+	at com.google.common.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:130)
+	at com.google.common.util.concurrent.MoreExecutors$5$1.run(MoreExecutors.java:952)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+13:48:36 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:41217] - Marked address [akka.tcp://book-impl-application@127.0.0.1:41217] as [Leaving]
+13:48:36 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Exited [akka.tcp://book-impl-application@127.0.0.1:41217]
+13:48:36 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Exited [akka.tcp://book-impl-application@127.0.0.1:41217]
+13:48:36 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Exited [akka.tcp://book-impl-application@127.0.0.1:41217]
+13:48:36 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Exited [akka.tcp://book-impl-application@127.0.0.1:41217]
+13:48:36 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Oldest observed OldestChanged: [akka.tcp://book-impl-application@127.0.0.1:41217 -> None]
+13:48:36 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Oldest observed OldestChanged: [akka.tcp://book-impl-application@127.0.0.1:41217 -> None]
+13:48:36 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Oldest observed OldestChanged: [akka.tcp://book-impl-application@127.0.0.1:41217 -> None]
+13:48:36 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Oldest observed OldestChanged: [akka.tcp://book-impl-application@127.0.0.1:41217 -> None]
+13:48:36 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - ClusterSingletonManager state change [Oldest -> WasOldest]
+13:48:36 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - ClusterSingletonManager state change [Oldest -> WasOldest]
+13:48:36 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - ClusterSingletonManager state change [Oldest -> WasOldest]
+13:48:36 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - ClusterSingletonManager state change [Oldest -> WasOldest]
+13:48:37 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:41217] - Exiting (leader), starting coordinated shutdown
+13:48:37 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:41217] - Leader is moving node [akka.tcp://book-impl-application@127.0.0.1:41217] to [Exiting]
+13:48:37 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - ClusterSingletonManager state change [WasOldest -> Stopping]
+13:48:37 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - ClusterSingletonManager state change [WasOldest -> Stopping]
+13:48:37 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - ClusterSingletonManager state change [WasOldest -> Stopping]
+13:48:37 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - ClusterSingletonManager state change [WasOldest -> Stopping]
+13:48:37 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:41217] - Exiting completed
+13:48:37 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:41217] - Shutting down...
+13:48:37 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:41217] - Successfully shut down
+13:48:37 INFO  RemoteActorRefProvider$RemotingTerminator {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Shutting down remote daemon.
+13:48:37 INFO  RemoteActorRefProvider$RemotingTerminator {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Remote daemon shut down; proceeding with flushing remote transports.
+13:48:37 INFO  Remoting {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Remoting shut down
+13:48:37 INFO  RemoteActorRefProvider$RemotingTerminator {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Remoting shut down.
+13:48:38 INFO  Slf4jLogger {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 applyOrElse} - Slf4jLogger started
+13:48:38 INFO  Remoting {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Starting remoting
+13:48:38 INFO  Remoting {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Remoting started; listening on addresses :[akka.tcp://book-impl-application@127.0.0.1:38649]
+13:48:38 INFO  Remoting {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Remoting now listens on addresses: [akka.tcp://book-impl-application@127.0.0.1:38649]
+13:48:38 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:38649] - Starting up, Akka version [2.5.16] ...
+13:48:38 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:38649] - Registered cluster JMX MBean [akka:type=Cluster,port=38649]
+13:48:38 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:38649] - Started up successfully
+13:48:38 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:38649] - No seed-nodes configured, manual cluster join required
+13:48:38 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:38649] - Node [akka.tcp://book-impl-application@127.0.0.1:38649] is JOINING itself (with roles [dc-default]) and forming new cluster
+13:48:38 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:38649] - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:38649] dc [default] is the new leader
+13:48:38 INFO  Cluster(akka://book-impl-application) {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster Node [akka.tcp://book-impl-application@127.0.0.1:38649] - Leader is moving node [akka.tcp://book-impl-application@127.0.0.1:38649] to [Up]
+13:48:38 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Singleton manager starting singleton actor [akka://book-impl-application/system/sharding/BookEntityCoordinator/singleton]
+13:48:38 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - ClusterSingletonManager state change [Start -> Oldest]
+13:48:38 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Singleton manager starting singleton actor [akka://book-impl-application/user/cassandraOffsetStorePrepare-singleton/singleton]
+13:48:38 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - ClusterSingletonManager state change [Start -> Oldest]
+13:48:38 INFO  ClusterStartupTaskActor {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Executing cluster start task cassandraOffsetStorePrepare.
+13:48:38 INFO  ClusterSingletonProxy {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Singleton identified at [akka://book-impl-application/user/cassandraOffsetStorePrepare-singleton/singleton]
+13:48:38 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Singleton manager starting singleton actor [akka://book-impl-application/user/readSideGlobalPrepare-BookProcessor-singleton/singleton]
+13:48:38 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - ClusterSingletonManager state change [Start -> Oldest]
+13:48:38 INFO  ClusterStartupTaskActor {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Executing cluster start task readSideGlobalPrepare-BookProcessor.
+13:48:38 INFO  ClusterSingletonProxy {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Singleton identified at [akka://book-impl-application/user/readSideGlobalPrepare-BookProcessor-singleton/singleton]
+13:48:38 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Singleton manager starting singleton actor [akka://book-impl-application/system/sharding/BookProcessorCoordinator/singleton]
+13:48:38 INFO  ClusterSingletonManager {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - ClusterSingletonManager state change [Start -> Oldest]
+13:48:38 INFO  Play {play.api.Play$ start} - Application started (Dev)
+13:48:38 INFO  ClockFactory {com.datastax.driver.core.ClockFactory newInstance} - Using native clock to generate timestamps.
+13:48:38 INFO  ClockFactory {com.datastax.driver.core.ClockFactory newInstance} - Using native clock to generate timestamps.
+13:48:38 INFO  ClockFactory {com.datastax.driver.core.ClockFactory newInstance} - Using native clock to generate timestamps.
+13:48:39 INFO  DCAwareRoundRobinPolicy {com.datastax.driver.core.policies.DCAwareRoundRobinPolicy init} - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+13:48:39 INFO  Cluster {com.datastax.driver.core.Cluster$Manager init} - New Cassandra host localhost/127.0.0.1:9042 added
+13:48:39 INFO  DCAwareRoundRobinPolicy {com.datastax.driver.core.policies.DCAwareRoundRobinPolicy init} - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+13:48:39 INFO  Cluster {com.datastax.driver.core.Cluster$Manager init} - New Cassandra host localhost/127.0.0.1:9042 added
+13:48:39 INFO  DCAwareRoundRobinPolicy {com.datastax.driver.core.policies.DCAwareRoundRobinPolicy init} - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+13:48:39 INFO  Cluster {com.datastax.driver.core.Cluster$Manager init} - New Cassandra host localhost/127.0.0.1:9042 added
+13:48:39 INFO  ClusterStartupTaskActor {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster start task readSideGlobalPrepare-BookProcessor done.
+13:48:39 INFO  ClusterStartupTaskActor {akka.event.slf4j.Slf4jLogger$$anonfun$receive$1 $anonfun$applyOrElse$3} - Cluster start task cassandraOffsetStorePrepare done.
+13:48:39 INFO  ClockFactory {com.datastax.driver.core.ClockFactory newInstance} - Using native clock to generate timestamps.
+13:48:39 INFO  DCAwareRoundRobinPolicy {com.datastax.driver.core.policies.DCAwareRoundRobinPolicy init} - Using data-center name 'datacenter1' for DCAwareRoundRobinPolicy (if this is incorrect, please provide the correct datacenter name with DCAwareRoundRobinPolicy constructor)
+13:48:39 INFO  Cluster {com.datastax.driver.core.Cluster$Manager init} - New Cassandra host localhost/127.0.0.1:9042 added
